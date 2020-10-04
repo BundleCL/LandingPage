@@ -1,0 +1,199 @@
+:root {
+  --prussian-blue: #082235;
+  --honey-yellow: #ffb41f;
+  --blue-yonder: #476dae;
+  --cultured: #f5f6f4;
+  --languid-lavender: #d5d3ee;
+}
+
+@font-face {
+  font-family: lightFont;
+  src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url(./assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+html {
+  overflow: auto;
+  background: var(--cultured);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.wave_1 {
+  z-index: -1;
+}
+
+ul {
+  border-width: 1px 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+.waves {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  min-height: 70%;
+  margin: auto 0;
+}
+
+.waves2 {
+  margin-top: -15vh;
+  margin-bottom: -1vh;
+}
+
+.waves3 {
+  margin-top: -1vh;
+}
+
+.logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding-right: 100px;
+  color: var(--prussian-blue);
+  font-family: boldFont;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: var(--honey-yellow);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--honey-yellow);
+  width: 5px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+}
+
+.projects .project {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 40%;
+}
+
+.projects .project-logo {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90%;
+}
+
+.projects .detail {
+  font-size: 4vh;
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  text-align: center;
+}
+
+.projects .detailed {
+  font-size: 3vh;
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  text-align: center;
+}
+
+.projects .action {
+  font-size: 4vh;
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  text-align: center;
+}
+
+.name input {
+  border-radius: 10vh;
+}
+
+.squad {
+  background: var(--languid-lavender);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10vh;
+}
+
+.squad .project {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 60%;
+}
+
+.squad .project-logo {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90%;
+}
+
+.squad .info {
+    margin: auto;
+}
+
+.squad .detail {
+  font-size: 4vh;
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  text-align: center;
+}
+
+.squad .detailed {
+  font-size: 3vh;
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  text-align: center;
+}
+
+.squad .action {
+  font-size: 4vh;
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  text-align: center;
+}

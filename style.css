@@ -1,0 +1,50 @@
+:root {
+  --prussian-blue: #082235;
+  --honey-yellow: #ffb41f;
+  --blue-yonder: #476dae;
+  --cultured: #f5f6f4;
+  --languid-lavender: #d5d3ee;
+}
+
+@font-face {
+  font-family: lightFont;
+  src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url(./assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+html {
+  overflow: auto;
+  background: var(--cultured);
+  background-image: url(./assets/images/waves.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--honey-yellow);
+  width: 5px;
+}
