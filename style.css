@@ -19,7 +19,7 @@
 html {
   overflow: auto;
   background: var(--cultured);
-  background-image: url(./assets/images/waves.svg);
+  background-image: url(./assets/images/waves-modified.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
