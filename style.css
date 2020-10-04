@@ -21,7 +21,8 @@ html {
   background: var(--cultured);
   background-image: url(./assets/images/waves.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
   scroll-behavior: smooth;
 }
 
@@ -29,6 +30,13 @@ html {
   display: block;
   margin: 0;
   width: 100%;
+}
+
+.navbar {
+  margin-top: 3vh;
+  margin-right: 2vw;
+  font-family: boldFont;
+  color: var(--prussian-blue);
 }
 
 /* Scrollbar Styling */
@@ -48,3 +56,4 @@ html {
   background: var(--honey-yellow);
   width: 5px;
 }
+
