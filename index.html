@@ -13,6 +13,24 @@
       src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init("user_aAc9AwijS5tHcSkA8yV6D");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this);
+            });
+        }
+    </script>
   </head>
   <body>
     <section class="hero is-fullheight">
@@ -95,7 +113,7 @@
                   <div class="column is-two-thirds">
                     <p class="title inf1">¡Contáctanos!</p>
 
-                    <form action="" class="box">
+                    <form id="contact-form" class="box">
                       <div class="field is-horizontal">
                         <div class="field-body">
                           <div class="field">
@@ -104,6 +122,7 @@
                                 class="input"
                                 type="text"
                                 placeholder="Nombre"
+                                name="user_name"
                               />
                               <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
@@ -116,6 +135,7 @@
                                 class="input"
                                 type="email"
                                 placeholder="Email"
+                                name="user_name"
                               />
                               <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
@@ -137,6 +157,7 @@
                                   class="input"
                                   type="tel"
                                   placeholder="Tu numero de telefono"
+                                  name="contact_number"
                                 />
                               </p>
                             </div>
@@ -146,13 +167,17 @@
                       <div class="field">
                         <div class="field">
                           <div class="control">
-                            <textarea class="textarea" placeholder="Cuentanos sobre tus necesidades!"></textarea>
+                            <textarea
+                              class="textarea"
+                              placeholder="Cuentanos sobre tus necesidades!"
+                              name="message"
+                            ></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <button class="button is-contacto">Enviar</button>
+                          <input type="submit" value="Enviar" class="button is-contacto">
                         </div>
                       </div>
                     </form>
@@ -195,7 +220,7 @@
                   <div class="column is-two-thirds">
                     <p class="title inf1">¡Se parte del Squad!</p>
 
-                    <form action="" class="box">
+                    <form id="contact-form" class="box">
                       <div class="field is-horizontal">
                         <div class="field-body">
                           <div class="field">
@@ -204,6 +229,7 @@
                                 class="input"
                                 type="text"
                                 placeholder="Nombre"
+                                name="user_name"
                               />
                               <span class="icon is-small is-left">
                                 <i class="fas fa-user"></i>
@@ -216,6 +242,7 @@
                                 class="input"
                                 type="email"
                                 placeholder="Email"
+                                name="user_email"
                               />
                               <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
@@ -237,6 +264,7 @@
                                   class="input"
                                   type="tel"
                                   placeholder="Tu numero de telefono"
+                                  name="contact_number"
                                 />
                               </p>
                             </div>
@@ -245,7 +273,7 @@
                       </div>
                       <div class="field">
                         <div class="control">
-                          <button class="button is-contacto">Enviar</button>
+                          <input type="submit" value="Enviar" class="button is-contacto">
                         </div>
                       </div>
                     </form>
@@ -304,25 +332,21 @@
                       <p class="title is-4">Anwar Jamis</p>
                       <p class="subtitle is-6">@pelao</p>
                     </div>
-                    
                   </div>
                   <div class="redes">
-                    <a href="">
+                    <a
+                      href="https://www.linkedin.com/in/anwar-jamis-849b17123/"
+                    >
                       <span class="icon is-medium">
                         <i class="fab fa-lg fa-linkedin"></i>
                       </span>
                     </a>
-                    <a href="">
-                      <span class="icon is-medium">
-                        <i class="fab fa-lg fa-twitter"></i>
-                      </span>
-                    </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/anwarjamis/">
                       <span class="icon is-medium">
                         <i class="fab fa-lg fa-instagram"></i>
                       </span>
                     </a>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
@@ -340,27 +364,24 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">Anwar Jamis</p>
-                      <p class="subtitle is-6">@pelao</p>
+                      <p class="title is-4">Francisca Aguilera</p>
+                      <p class="subtitle is-6">@lafranera</p>
                     </div>
                   </div>
                   <div class="redes">
-                    <a href="">
+                    <a
+                      href="https://www.linkedin.com/in/francisca-aguilera-pozo-b7726610b/"
+                    >
                       <span class="icon is-medium">
                         <i class="fab fa-lg fa-linkedin"></i>
                       </span>
                     </a>
-                    <a href="">
-                      <span class="icon is-medium">
-                        <i class="fab fa-lg fa-twitter"></i>
-                      </span>
-                    </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/franaguilera_/">
                       <span class="icon is-medium">
                         <i class="fab fa-lg fa-instagram"></i>
                       </span>
                     </a>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,38 +399,45 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">Anwar Jamis</p>
-                      <p class="subtitle is-6">@pelao</p>
+                      <p class="title is-4">Rodrigo Gaona</p>
+                      <p class="subtitle is-6">@gaonuk</p>
                     </div>
                   </div>
                   <div class="redes">
-                    <a href="">
+                    <a
+                      href="https://www.linkedin.com/in/rodrigo-gaona-gonz%C3%A1lez-a39908172/"
+                    >
                       <span class="icon is-medium">
                         <i class="fab fa-lg fa-linkedin"></i>
                       </span>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/Gaonuk">
                       <span class="icon is-medium">
-                        <i class="fab fa-lg fa-twitter"></i>
+                        <i class="fab fa-lg fa-github"></i>
                       </span>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/gaonuk/">
                       <span class="icon is-medium">
                         <i class="fab fa-lg fa-instagram"></i>
                       </span>
                     </a>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-         
         </div>
       </div>
       <div class="hero-footer creditos">
         <div class="container is-centered">
-          <p class="respuesta">Bundle 2020 Design by <a href="https://github.com/Gaonuk">Gaonuk</a> </p>
-          <a href="https://stories.freepik.com/work">Illustration by Freepik Stories</a>
+          <p class="respuesta">
+            <i class="far fa-copyright"></i>
+            Bundle 2020 Design by
+            <a href="https://github.com/Gaonuk">Gaonuk</a>
+          </p>
+          <a href="https://stories.freepik.com/work"
+            >Illustration by Freepik Stories</a
+          >
         </div>
       </div>
     </section>
