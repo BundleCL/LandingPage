@@ -67,8 +67,19 @@ html {
 }
 
 input:focus {
-  border: var(--honey-yellow);
+  lighting-color: var(--honey-yellow);
+  text-decoration-color: var(--honey-yellow);
+  outline-color: var(--honey-yellow);
 }
+
+.is-contacto {
+  background-color: var(--honey-yellow);
+}
+
+
+
+
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 5px;
@@ -85,5 +96,32 @@ input:focus {
   border-radius: 10px;
   background: var(--honey-yellow);
   width: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bundled {
+
+    background-image: url(./assets/images/waves-modified.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .columnas {
+    margin-left: .75rem;
+  }
+
+  .projects {
+    background-image: url(./assets/images/wave\ \(4\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+  }
 }
 
