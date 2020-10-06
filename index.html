@@ -12,24 +12,29 @@
       defer
       src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
     ></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="hero is-fullheight-with-navbar">
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-      
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">      
+
+        <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-              <a href="" class="title is-4">Projects</a>
+              <a href="#projects" class="title is-4">Projects</a>
             </div>
             <div class="navbar-item"></div>
             <div class="navbar-item">
@@ -42,13 +47,98 @@
           </div>
         </div>
       </nav>
-      <div class="hero-body">
+      <div class="hero-body bundled">
         <div class="container is-centered">
           <div class="columns is-mobile is-centered">
             <div class="column is-half">
               <p class="bd-notification is-primary">
-                <img class="image logo" src="./assets/images/logo-real.svg" alt="">
+                <img
+                  class="image logo"
+                  src="./assets/images/logo-real.svg"
+                  alt=""
+                />
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight projects">
+      <div class="hero-body" id="projects">
+        <div class="columns">
+          <div class="column">
+            <img
+              class="image"
+              src="./assets/images/Social ideas-pana.svg"
+              alt=""
+            />
+          </div>
+          <div class="column is-1"></div>
+          <div class="column">
+            <div class="columns is-multiline">
+              <div class="column is-full">
+                <img
+                  class="image project"
+                  src="./assets/images/logo-projects.svg"
+                  alt=""
+                />
+              </div>
+              <div class="column is-full">
+                <p class="title inf1">¿Tienes una idea y no sabes programar?</p>
+                <p class="title inf1">Desarrollamos soluciones tecnologicas hablando en lenguaje natural</p>
+              </div>
+              <div class="column is-full">
+                <p class="title inf1">¡Contáctanos!</p>
+
+                <form action="" class="box">
+                  <div class="field is-horizontal">
+
+                    <div class="field-body">
+                      <div class="field">
+                        <p class="control is-expanded has-icons-left">
+                          <input class="input" type="text" placeholder="Nombre">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control is-expanded has-icons-left has-icons-right">
+                          <input class="input" type="email" placeholder="Email">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="field is-horizontal">
+                    <div class="field-body">
+                      <div class="field is-expanded">
+                        <div class="field has-addons">
+                          <p class="control">
+                            <a class="button is-static">
+                              +56
+                            </a>
+                          </p>
+                          <p class="control is-expanded">
+                            <input class="input" type="tel" placeholder="Tu numero de telefono">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+             
+              <div class="column is-full">
+
+              </div>
+              <div class="column is-full">
+
+              </div>
             </div>
           </div>
         </div>

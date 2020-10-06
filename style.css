@@ -19,13 +19,17 @@
 html {
   overflow: auto;
   background: var(--cultured);
+  scroll-behavior: smooth;
+}
+
+.bundled {
+
   background-image: url(./assets/images/waves-modified.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  scroll-behavior: smooth;
-}
 
+}
 .logo {
   display: block;
   margin: 0;
@@ -39,6 +43,32 @@ html {
   color: var(--prussian-blue);
 }
 
+.columns {
+  width: 100%;
+  height: 100%;
+}
+
+.projects {
+  background-image: url(./assets/images/wave\ \(4\).svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  text-align: center;
+}
+
+.inf1 {
+  color: var(--prussian-blue);
+  font-family: lightFont;
+  font-weight: 300;
+}
+
+.project {
+  width: 80%;
+}
+
+input:focus {
+  border: var(--honey-yellow);
+}
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 5px;
