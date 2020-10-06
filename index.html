@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="hero is-fullheight-with-navbar">
+    <section class="hero is-fullheight">
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a
@@ -38,11 +38,11 @@
             </div>
             <div class="navbar-item"></div>
             <div class="navbar-item">
-              <a href="" class="title is-4">Squad</a>
+              <a href="#squad" class="title is-4">Squad</a>
             </div>
             <div class="navbar-item"></div>
             <div class="navbar-item">
-              <a href="" class="title is-4">Contacto</a>
+              <a href="#equipo" class="title is-4">Nosotros</a>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
       <div class="hero-body bundled">
         <div class="container is-centered">
           <div class="columns is-mobile is-centered">
-            <div class="column is-half">
+            <div class="column is-half is-logo">
               <p class="bd-notification is-primary">
                 <img
                   class="image logo"
@@ -73,12 +73,11 @@
               alt=""
             />
           </div>
-          <div class="column is-1"></div>
           <div class="column">
             <div class="columns columnas is-multiline is-mobile is-centered">
               <div class="column is-full">
                 <img
-                  class="image project"
+                  class="image project squad-logo"
                   src="./assets/images/logo-projects.svg"
                   alt=""
                 />
@@ -91,7 +90,7 @@
                 </p>
               </div>
               <div class="column is-full">
-                <div class="columns">
+                <div class="columns formulario">
                   <div class="column"></div>
                   <div class="column is-two-thirds">
                     <p class="title inf1">¡Contáctanos!</p>
@@ -145,8 +144,15 @@
                         </div>
                       </div>
                       <div class="field">
+                        <div class="field">
+                          <div class="control">
+                            <textarea class="textarea" placeholder="Cuentanos sobre tus necesidades!"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field">
                         <div class="control">
-                          <button class="button is-contacto">Submit</button>
+                          <button class="button is-contacto">Enviar</button>
                         </div>
                       </div>
                     </form>
@@ -159,6 +165,251 @@
               <div class="column is-full"></div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight squad">
+      <div class="hero-body" id="squad">
+        <div class="columns">
+          <div class="column">
+            <div class="columns columnas is-multiline is-mobile is-centered">
+              <div class="column is-full">
+                <img
+                  class="image project squad-logo"
+                  src="./assets/images/logo-squad.svg"
+                  alt=""
+                />
+              </div>
+              <div class="column is-full">
+                <p class="title inf1">
+                  Confiamos en tus habilidades y capacidades
+                </p>
+                <p class="title inf1">
+                  Te hacemos parte de un proyecto de desarrollo tecnológico real
+                  para que te valides antes de salir al mundo laboral
+                </p>
+              </div>
+              <div class="column is-full">
+                <div class="columns formulario">
+                  <div class="column"></div>
+                  <div class="column is-two-thirds">
+                    <p class="title inf1">¡Se parte del Squad!</p>
+
+                    <form action="" class="box">
+                      <div class="field is-horizontal">
+                        <div class="field-body">
+                          <div class="field">
+                            <p class="control has-icons-left">
+                              <input
+                                class="input"
+                                type="text"
+                                placeholder="Nombre"
+                              />
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                              </span>
+                            </p>
+                          </div>
+                          <div class="field">
+                            <p class="control has-icons-left has-icons-right">
+                              <input
+                                class="input"
+                                type="email"
+                                placeholder="Email"
+                              />
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="field">
+                        <div class="field-body">
+                          <div class="field">
+                            <div class="field has-addons">
+                              <p class="control">
+                                <a class="button is-static"> +56 </a>
+                              </p>
+                              <p class="control is-expanded">
+                                <input
+                                  class="input"
+                                  type="tel"
+                                  placeholder="Tu numero de telefono"
+                                />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="control">
+                          <button class="button is-contacto">Enviar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="column"></div>
+                </div>
+              </div>
+
+              <div class="column is-full"></div>
+              <div class="column is-full"></div>
+            </div>
+          </div>
+
+          <div class="column">
+            <img
+              class="image"
+              src="./assets/images/Pair programming-pana.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight valor">
+      <div class="hero-body">
+        <div class="container">
+          <p class="title big">¿Por qué nosotros?</p>
+          <p class="title respuesta">
+            Usamos tecnología para formular y desarrollar soluciones eficientes
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight contacto" id="equipo">
+      <div class="hero-head team">
+        <div class="container">
+          <p class="title big">Equipo</p>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns formulario">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Anwar Jamis</p>
+                      <p class="subtitle is-6">@pelao</p>
+                    </div>
+                    
+                  </div>
+                  <div class="redes">
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-linkedin"></i>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-twitter"></i>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-instagram"></i>
+                      </span>
+                    </a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Anwar Jamis</p>
+                      <p class="subtitle is-6">@pelao</p>
+                    </div>
+                  </div>
+                  <div class="redes">
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-linkedin"></i>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-twitter"></i>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-instagram"></i>
+                      </span>
+                    </a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img
+                      src="https://bulma.io/images/placeholders/1280x960.png"
+                      alt="Placeholder image"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Anwar Jamis</p>
+                      <p class="subtitle is-6">@pelao</p>
+                    </div>
+                  </div>
+                  <div class="redes">
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-linkedin"></i>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-twitter"></i>
+                      </span>
+                    </a>
+                    <a href="">
+                      <span class="icon is-medium">
+                        <i class="fab fa-lg fa-instagram"></i>
+                      </span>
+                    </a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="hero-footer creditos">
+        <div class="container is-centered">
+          <p class="respuesta">Bundle 2020 Design by <a href="https://github.com/Gaonuk">Gaonuk</a> </p>
+          <a href="https://stories.freepik.com/work">Illustration by Freepik Stories</a>
         </div>
       </div>
     </section>

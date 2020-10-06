@@ -23,12 +23,10 @@ html {
 }
 
 .bundled {
-
   background-image: url(./assets/images/waves-modified.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-
 }
 .logo {
   display: block;
@@ -49,7 +47,7 @@ html {
 }
 
 .projects {
-  background-image: url(./assets/images/wave\ \(4\).svg);
+  background-image: url(./assets/images/arriba.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -66,6 +64,12 @@ html {
   width: 80%;
 }
 
+.squad {
+  margin-top: -1px;
+  background-color: var(--languid-lavender);
+  text-align: center;
+}
+
 input:focus {
   lighting-color: var(--honey-yellow);
   text-decoration-color: var(--honey-yellow);
@@ -76,9 +80,61 @@ input:focus {
   background-color: var(--honey-yellow);
 }
 
+.squad-logo {
+  margin: auto;
+  padding: auto;
+}
 
+.valor {
+  margin-top: -1px;
+  background-image: url(./assets/images/abajo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  text-align: center;
+}
 
+.respuesta {
+  font-family: boldFont;
+  color: var(--prussian-blue);
+}
 
+.creditos {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.creditos p {
+  font-size: 2vh;
+}
+
+.big {
+  font-family: boldFont;
+  color: var(--prussian-blue);
+  font-size: 6vh;
+}
+
+.team {
+  margin-top: 8vh;
+  text-align: center;
+}
+
+.contacto {
+  margin-top: -1px;
+  background-image: url(./assets/images/footer.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.icon {
+  color: var(--honey-yellow);
+}
+
+.card {
+  font-family: lightFont;
+  font-weight: 300;
+}
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
@@ -100,12 +156,10 @@ input:focus {
 
 @media only screen and (max-width: 600px) {
   .bundled {
-
     background-image: url(./assets/images/waves-modified.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
   }
 
   .project {
@@ -113,11 +167,21 @@ input:focus {
   }
 
   .columnas {
-    margin-left: .75rem;
+    margin-left: 0.75rem;
   }
 
   .projects {
-    background-image: url(./assets/images/wave\ \(4\).svg);
+    background-image: url(./assets/images/arriba.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+  }
+
+
+  .contacto {
+    margin-top: -1px;
+    background-image: url(./assets/images/footer.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -129,6 +193,30 @@ input:focus {
     font-family: lightFont;
     font-weight: 300;
     font-size: 3vh;
-}
-}
+  }
 
+  .respuesta {
+    font-family: boldFont;
+    color: var(--prussian-blue);
+    font-size: 2vh;
+  }
+
+  .big {
+    font-family: boldFont;
+    color: var(--prussian-blue);
+    font-size: 4vh;
+  }
+
+  .is-logo {
+    width: 100%;
+  }
+
+  .columns.is-mobile > .column.is-half {
+    flex: none;
+    width: 70%;
+  }
+
+  .formulario {
+    margin-left: 0.375rem;
+  }
+}
