@@ -123,5 +123,12 @@ input:focus {
     background-position: bottom;
     text-align: center;
   }
+
+  .inf1 {
+    color: var(--prussian-blue);
+    font-family: lightFont;
+    font-weight: 300;
+    font-size: 3vh;
+}
 }
 
